@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#ececec"
+    tools:context="fr.mylocalphone.sanbot.activities.SanbotServicesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#B39DDB"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="0dp">
+
+            <ImageView
+                android:id="@+id/ivHotelLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo_header_acacias_etoile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+            <!--
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabFrench"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:backgroundTint="#ffffff"
+                app:elevation="2dp"
+                app:srcCompat="@mipmap/ico_french_language" />
+            -->
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="100dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:rowCount="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvHotelServices"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:onClick="launchHotelServices"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/ic_room_service_black_48dp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/menu_hotel_services"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvWeather"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:onClick="launchWeather"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@mipmap/ico_menu_weather" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/menu_weather"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvTransportation"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:onClick="launchGetAroundInParis"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@drawable/ic_directions_bus_black_48dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/menu_get_around_in_paris"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvRestaurantBarBakery"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:onClick="launchRestaurantBarBakery"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@drawable/ic_restaurant_black_48dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/menu_restaurants_bars_bakeries"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvParis"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:onClick="launchParis"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@mipmap/ico_menu_paris" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/menu_paris"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvTalkToMe"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:onClick="launchTalkToMe"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@mipmap/ico_menu_talk_to_me" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/menu_talk_to_me"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </android.support.v7.widget.GridLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

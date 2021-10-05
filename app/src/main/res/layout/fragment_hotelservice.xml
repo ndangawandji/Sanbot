@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvHotelService"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="0dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:layout_columnWeight="1"
+    app:layout_rowWeight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="#f5f5f5"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivHotelService"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#f5f5f5" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvHotelService"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_weight="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+<!--
+    <Button
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bHotelService"
+        android:layout_width="550px"
+        android:layout_height="400px"
+        android:layout_margin="8px"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textAlignment="center"/>
+-->

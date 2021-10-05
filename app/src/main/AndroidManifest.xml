@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.mylocalphone.sanbot.activities">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <provider
+            android:name="com.qihancloud.opensdk.utils.GrammarProvider"
+            android:authorities="fr.mylocalphone.sanbot.activities.grammar"
+            android:exported="true" />
+
+        <!--
+        <meta-data
+            android:name="RECOGNIZE_MODE"
+            android:value="1" />
+        -->
+
+        <activity
+            android:name=".weather.WeatherActivity"
+            android:parentActivityName=".SanbotServicesActivity">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+        </activity>
+
+        <service
+            android:name="fr.mylocalphone.sanbot.services.SanbotIntentService"
+            android:exported="false" />
+        <service
+            android:name="fr.mylocalphone.sanbot.services.TalkToYouService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".hotelservices.HotelServicesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_hotel_services_bis"
+            android:parentActivityName=".SanbotServicesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.mylocalphone.sanbot.activities.SanbotServicesActivity" />
+        </activity>
+        <activity
+            android:name=".getaroundinparis.GetAroundInParisActivity"
+            android:parentActivityName=".SanbotServicesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.mylocalphone.sanbot.activities.SanbotServicesActivity" />
+        </activity>
+        <activity
+            android:name=".SanbotServicesActivity"
+            android:label="@string/title_activity_sanbot_services"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hotellaunchers.HotelLaunchersActivity" />
+        </activity>
+        <activity android:name=".hotelservices.HotelServicesOldActivity" />
+        <activity
+            android:name=".hotelservices.HotelServiceOldActivity"
+            android:parentActivityName=".hotelservices.HotelServicesOldActivity" />
+        <activity
+            android:name=".hotelservices.HotelServiceActivity"
+            android:label="@string/title_activity_hotel_service"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+        </activity>
+        <activity
+            android:name=".hotellaunchers.HotelLaunchersActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="fr.mylocalphone.sanbot.services.TalkToMeService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".hotelservices.HotelServices32Activity"
+            android:parentActivityName=".SanbotServicesActivity">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.mylocalphone.sanbot.activities.SanbotServicesActivity" />
+        </activity>
+        <activity
+            android:name=".hotelservices.HotelServices42Activity"
+            android:parentActivityName=".SanbotServicesActivity">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="fr.mylocalphone.sanbot.activities.SanbotServicesActivity" />
+        </activity>
+        <activity android:name=".paris.Paris">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+        </activity>
+        <activity android:name=".restaurantbarbakery.RestaurantBarBakeryActivity">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+        </activity>
+        <activity android:name=".talktome.TalkToMeActivity">
+            <meta-data
+                android:name="RECOGNIZE_MODE"
+                android:value="1" />
+        </activity>
+
+        <service
+            android:name="fr.mylocalphone.sanbot.services.PlayMusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".media.MediaActivity"></activity>
+    </application>
+
+</manifest>

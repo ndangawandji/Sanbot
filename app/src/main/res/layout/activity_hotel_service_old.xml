@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.mylocalphone.sanbot.activities.hotelservices.HotelServiceOldActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <ImageView
+            android:id="@+id/imgvHotelLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_button_activity_menu"/>
+
+        <TextView
+            android:id="@+id/txtvHotelServiceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/hotel_services_content_text_size"
+            android:textColor="@color/dialog_divide_color"
+            android:layout_margin="@dimen/margin_button_activity_menu"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txtvHotelServiceContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtvHotelServiceTitle"
+            android:textSize="@dimen/hotel_services_content_text_size"
+            android:textColor="@color/dialog_divide_color"
+            android:layout_margin="@dimen/margin_button_activity_menu"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txtvHotelServiceContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtvHotelServiceContent1"
+            android:textSize="@dimen/hotel_services_content_text_size"
+            android:layout_centerInParent="true"
+            android:textColor="@color/dialog_divide_color"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">Sanbot I.V.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Action</string>
+
+    <!-- ****************************************************************************************************** -->
+    <!-- ********************************************** Hotel list ******************************************** -->
+    <!-- ****************************************************************************************************** -->
+
+    <string name="hotel_list">Hotel List</string>
+    <string name="acacias_etoile_hotel_name">Acacias Etoile</string>
+    <string name="la_villa_des_ternes_hotel_name">La Villa des Ternes</string>
+    <string name="les_jardins_de_la_villa_hotel_name">Les Jardins de la Villa</string>
+    <string name="magda_champs_elysees_hotel_name">Royal Magda Etoile</string>
+
+    <!-- ****************************************************************************************************** -->
+    <!-- ********************************************* Sanbot Menu ******************************************** -->
+    <!-- ****************************************************************************************************** -->
+
+    <string name="menu_hotel_services">Hotel Services</string>
+    <string name="menu_weather">Weather</string>
+    <string name="menu_get_around_in_paris">Get around in Paris</string>
+    <string name="menu_restaurants_bars_bakeries">Restaurants, Bars &amp; Bakeries</string>
+    <string name="menu_paris">Paris pictures</string>
+    <string name="menu_talk_to_me">Talk to me</string>
+
+    <!-- ****************************************************************************************************** -->
+    <!-- ******************************************* Hotel services ******************************************* -->
+    <!-- ****************************************************************************************************** -->
+
+    <!-- Hotels Services Title -->
+    <string name="spa_service_title">SPA</string>
+    <string name="breakfast_service_title">BREAKFAST</string>
+    <string name="wifi_service_title">WIFI</string>
+    <string name="extra_amenities_service_title">EXTRA AMENITIES</string>
+    <string name="honesty_bar_service_title">HONESTY BAR</string>
+    <string name="meeting_room_service_title">MEETING ROOM</string>
+    <string name="meeting_rooms_service_title">MEETING ROOMS</string>
+    <string name="smart_phone_service_title">SMART PHONE IN BEDROOM</string>
+    <string name="mylocalphone_service_title">MyLocalPhone</string>
+    <string name="concierge_service_title">CONCIERGE</string>
+    <string name="concierge_extra_amenities_service_title">CONCIERGE AND EXTRA AMENITIES</string>
+
+
+    <!-- Hotel service breakfast -->
+    <string name="breakfast_service_content_text">
+        From 7am to 11am... In our breakfast room or served in your room (13 euros)
+    </string>
+    <string name="breakfast_service_content_text_magda_champs_elysees">
+        From 7am to 11am... In our breakfast room or served in your room (14 euros)
+    </string>
+    <string name="breakfast_service_content_text_ternes">
+        In our breakfast room or served in your room from 7am to 10am (17 euros).
+    </string>
+    <string name="breakfast_service_content_text_jardins">
+        In our breakfast room from 6:30am to 11am (from 7am to 11am on Saturday and Sunday), or served in your bedroom from 7am to 11am (19 euros).
+    </string>
+
+    <!-- Hotel service Honesty bar -->
+    <string name="honesty_bar_service_content_text">
+        Our Honesty bar offers from 2 pm, a set of drinks that you can enjoy while relaxing or working in our lobby%1$s
+    </string>
+    <string name="honesty_bar_service_content_text_complement">
+        .
+    </string>
+    <string name="honesty_bar_service_content_text_complement_ternes_jardins">
+        \ or patio.
+    </string>
+
+    <!-- Hotel service Wifi -->
+    <string name="wifi_service_content_text">
+        The Wifi is free !\n<i>Network :</i><b> %1$s</b>\n<i>Password :</i><b> welcome17</b>\n%2$s
+    </string>
+    <string name="wifi_acacais_etoile">
+        ACACIAS_HOTEL
+    </string>
+    <string name="wifi_la_villa_des_ternes">
+        HOTEL_LA_VILLA_DES_TERNES
+    </string>
+    <string name="wifi_les_jardins_de_la_villa">
+        LES_JARDINS_DE_LA_VILLA
+    </string>
+    <string name="wifi_magda_champs_elysees">
+        MAGDA_CHAMPS_ELYSEES
+    </string>
+    <string name="wifi_service_content_text_complement_ternes">
+        You should use the smart phone\' s HotSpot offered in your bedroom.
+    </string>
+    <string name="wifi_service_content_text_complement_magda_ternes">
+        \n You will get a better connection using your dedicated my local phone.
+    </string>
+
+    <!-- Hotel service Meeting room -->
+    <string name="meeting_room_service_content_text_ternes_jardins">
+        We also propose meeting rooms ! (until 13 persons in U-shape) The front desk will be happy to give you more details.
+    </string>
+    <string name="meeting_room_service_content_text">
+        We also propose a meeting room ! (%1$s until 13 persons in U-shape) The front desk will be happy to give you more details.
+    </string>
+    <string name="meeting_room_service_content_text_acacias_magda">
+        located within 5 minutes only,
+    </string>
+
+    <!-- Hotel service Extra amenities -->
+    <string name="extra_amenities_service_content_text">
+        %1$s hesitate to ask whatever you may need (towels, shower cap, sleepers).
+    </string>
+    <string name="extra_amenities_services_content_text_jardins_magda">
+        \nAlso don\'t
+    </string>
+    <string name="extra_amenities_services_content_text_complement_acacias_ternes">
+        Don\'t
+    </string>
+
+    <!-- Hotel service Concierge -->
+    <string name="concierge_service_content_text">
+        The front desk will be %1$s happy to give you some advises about reservations (taxis, restaurants, cabarets, etc...).
+    </string>
+    <string name="concierge_service_content_text_jardins_magda">
+        also
+    </string>
+
+    <!-- Hotel service MyLocalPhone -->
+    <string name="mylocalphone_service_content_text">
+        %1$s our rooms are equipped with a Smartphone. Netflix, nomade HotSpot Wifi, call for free, room service and more...The front desk can show you how to use it.
+    </string>
+    <string name="mylocalphone_service_content_text_magda">
+        All
+    </string>
+    <string name="mylocalphone_service_content_text_terne">
+        All
+    </string>
+
+    <!-- Hotel service spa -->
+    <string name="spa_service_content_text">
+        Need to relaxe ? %1$s Just to ask the front desk for a reservation.
+    </string>
+    <string name="spa_service_content_text_terne">
+        The hotel Les Jardins de la Villa\' s Hammam/Sauna (within 1 minute), can be booked for you: € 13. From 7am to 9pm (last access: 8pm).
+    </string>
+    <string name="spa_service_content_text_jardin">
+        Our Hammam/Sauna is available for free (you should book before use it) from 7am to 9pm (last access: 8pm).
+    </string>
+
+    <string name="breakfast_service_speech_content">
+        Breakfast service can also be offered
+    </string>
+
+    <!-- Hotel service Honesty bar -->
+    <string name="honesty_bar_service_speech_content">
+        Our honesty bar.
+    </string>
+
+    <!-- Hotel service Wifi -->
+    <string name="wifi_service_speech_content">
+        Our wifi network is free.
+    </string>
+
+
+    <!-- Hotel service Meeting room -->
+    <string name="meeting_room_service_speech_content">
+        We can also loan you our meeting room ! The welcome office will be happy to give more details.
+    </string>
+
+    <!-- Hotel service Concierge -->
+    <string name="concierge_service_speech_content">
+        Some furniture are available for you in our hotel.
+    </string>
+
+    <!-- Hotel service Extra amenities -->
+    <string name="extra_amenities_service_speech_content">
+        You can also find out some informations about reservation in Paris.
+    </string>
+
+    <!-- Hotel service MyLocalPhone -->
+    <string name="mylocalphone_service_speech_content">
+        We also offer smart phone that you can use whenever you would like.
+    </string>
+
+    <!-- Hotel service spa -->
+    <string name="spa_service_speech_content">
+        Our spa service for relaxing. Our welcome officer will give you more informations on that.
+    </string>
+
+
+    <!-- ***************************************************************************************************** -->
+    <!-- **** TALK TO ME ************************************************************************************* -->
+    <!-- ***************************************************************************************************** -->
+
+    <string name="talk_to_me_example_1">
+        Hello Sanbot !
+    </string>
+    <string name="talk_to_me_example_2">
+        Stop !
+    </string>
+    <string name="talk_to_me_example_3">
+        Please, can you tell me about the hotel ?
+    </string>
+    <string name="talk_to_me_example_4">
+        Please, can you tell me about transportation around the hotel ?
+    </string>
+    <string name="talk_to_me_example_5">
+        Please, can you tell me about walking in Paris ?
+    </string>
+    <string name="talk_to_me_example_6">
+        Please, can you tell me about restaurants around the hotel ?
+    </string>
+    <string name="talk_to_me_example_7">
+        Please, can you tell me about bars around the hotel ?
+    </string>
+    <string name="talk_to_me_example_8">
+        Please, can you tell me about bakeries around the hotel ?
+    </string>
+    <string name="talk_to_me_example_9">
+        Please, can you tell me about weather in Paris ?
+    </string>
+    <string name="talk_to_me_example_10">
+        Thank you.
+    </string>
+    <string name="talk_to_me_example_11">
+        God bye !
+    </string>
+
+
+    <!-- *********************************************************************************************** -->
+    <!-- *********************************** GET AROUND IN PARIS *************************************** -->
+    <!-- *********************************************************************************************** -->
+
+    <string name="transportation_metro_rer_title">
+        Metro and RER stations around %1s
+    </string>
+    <string name="transportation_bus_title">
+        Bus stop around %1s
+    </string>
+    <string name="transportation_taxi_title">
+        Taxi stop around %1s
+    </string>
+
+
+    <string name="test">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+        ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJ
+
+    </string>
+
+
+    <string name="title_activity_hotel_services_bis">HotelServicesBisActivity</string>
+
+    <string name="title_activity_get_around_in_paris">GetAroundInParisActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sanbot_services">SanbotServicesActivity</string>
+    <string name="title_activity_hotel_service">HotelServiceActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+
+</resources>

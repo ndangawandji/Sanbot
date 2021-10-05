@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#ececec"
+    tools:context="fr.mylocalphone.sanbot.activities.hotellaunchers.HotelLaunchersActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#2196F3"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel_list"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+        </LinearLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="200dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="4"
+            app:rowCount="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvLaunchAcaciasEtoile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+
+                            app:srcCompat="@mipmap/ico_launcher_acaciasetoile" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/acacias_etoile_hotel_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvLaunchLaVillaDesTernes"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@mipmap/ico_launcher_lavilladesternes" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/la_villa_des_ternes_hotel_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvLaunchLesJardinsDeLaVilla"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@mipmap/ico_launcher_lesjardinsdelavilla" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/les_jardins_de_la_villa_hotel_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvLaunchMagdaChampsElysees"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#f5f5f5"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#f5f5f5"
+                            app:srcCompat="@mipmap/ico_launcher_magdachampselysees" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="4"
+                        android:text="@string/magda_champs_elysees_hotel_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </android.support.v7.widget.GridLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
